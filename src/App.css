@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe4e1;
+}
+
+.card-to-do {
+  padding: 25px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  width: 700px;
+  color: #191919;
+}
+
+h1 {
+  text-align: center;
+}
+
+.counter-todos {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.counter-todos h3 {
+  font-weight: 500;
+}
+
+.counter-todos span {
+  color: #96f259;
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.counter-todos .pendiente {
+  color: #f25959;
+}
+
+ul {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+ul li span {
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+ul li form {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-update {
+  border: none;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 18px;
+  color: #555;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+}
+
+.container-done {
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  border: 2px solid #09a129;
+  cursor: pointer;
+}
+
+.container-done.active {
+  background-color: #09a129;
+}
+
+.text-decoration-dashed {
+  text-decoration: line-through;
+}
+
+.btn-delete {
+  background-color: #ba181b;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-delete:hover {
+  background-color: #e5383b;
+}
+
+.btn-edit {
+  background-color: #00b4d8;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-edit:hover {
+  background-color: #48cae4;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+
+.add-todo h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.input-add {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  flex: 1;
+  font-family: inherit;
+  font-size: 17px;
+  color: #555;
+}
+
+.btn-add {
+  border: none;
+  background-color: #d9ff00;
+  color: #252525;
+  padding: 5px 40px;
+  border-radius: 20px;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #bcdb0d;
+}
